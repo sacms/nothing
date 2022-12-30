@@ -31,20 +31,7 @@
   
 </head>
 <body>
-  
-  <div class="box">
-    <input id="txtURL" type="text" value="www.google.com" autofocus>
-  </div>
-  <div class="box">
-    <button id="btnGo">Lets Go</button>
-  </div>
-  <div class="box">
-    <span>Switch Line:</span>
-    <select id="selNode"></select>
-  </div>
-  <div class="box" id="list">
-  </div>
-  <div>
+
   <script>
     const PAGE_CONF_SET = 110
     const PAGE_CONF_GET = 111
@@ -143,8 +130,7 @@
         let [id, url] = v
         url = url || `www.${id}.com/`
         return `\
-<a rel="noopener noreferrer" href=./-----https://${url}>\
-<img width=128 height=128 src=__sys__/assets/ico/${id}.png></a>`
+`
       }).join('')
     }
 
